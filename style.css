@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fccd86;
+    position: relative;
+    color: #fff;
+}
+
+.profile-card {
+    height: 350px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fdc7bc;
+    border-radius: 10px;
+    box-shadow: 15px 35px 20px rgba(0, 0, 0, 0.5),
+    -10px -20px 20px rgba(0, 0, 0, 0.5);
+}
+
+.profile-content {
+    padding-inline: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-picture {
+    width: 120px;
+    height: 120px;
+    background-color: #aaa;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid #e37083;
+}
+
+.profile-picture img {
+    max-width: 100%;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.profile-picture img:hover {
+    transform: scale(1.08);
+}
+
+.profile-name {
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #e37083;
+    text-transform: capitalize;
+}
+
+.profile-description {
+    margin-top: 5px;
+    font-size: 12px;
+    color: #e37083;
+}
+
+.social-icons {
+    margin-top: 20px;
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.social-icons li {
+    display: inline-block;
+}
+
+.social-icons a {
+    margin-top: -5px;
+    margin-bottom: 2px;
+    margin-left: 8px;
+    margin-right: 8px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.3s ease;
+    font-size: 15px;
+    color: var(--color);
+}
+
+.social-icons a:hover {
+    background: var(--color);
+    color: #fff;
+    box-shadow: 0 0 5px var(--color),
+    0 0 25px var(--color),
+    0 0 50px var(--color),
+    0 0 75px var(--color),;
+}
